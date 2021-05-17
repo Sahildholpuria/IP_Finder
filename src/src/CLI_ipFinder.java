@@ -3,7 +3,6 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.*;
 
-import javax.swing.JOptionPane;
 
 public class CLI_ipFinder{
     public static void main(String[] args) throws UnknownHostException{
@@ -14,6 +13,8 @@ public class CLI_ipFinder{
 
     public static void IP_Finder() throws UnknownHostException{
 
+        System.out.println("Enter Website URL :");
+
         Scanner sc = new Scanner(System.in); 
         String url = sc.nextLine().toLowerCase();
         sc.close();
@@ -22,6 +23,8 @@ public class CLI_ipFinder{
 
         IP.getAddress();
 
-        JOptionPane.showMessageDialog(null,IP);
+        System.out.println(IP);
+
+        // JOptionPane.showMessageDialog(null,IP);
     }
 }
