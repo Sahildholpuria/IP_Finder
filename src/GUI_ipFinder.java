@@ -1,5 +1,3 @@
-package src;
-
 import java.awt.event.ActionEvent;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
